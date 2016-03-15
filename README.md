@@ -26,3 +26,7 @@ INSERT INTO my_mapping_table (key, value)  VALUES
   (27320, 10027350),
   (27320, 10027350);
 ```
+
+## RAM consumption
+
+The converter uses Python generators so it does not load the whole dump into your RAM. This allows you to conver really huge dumps.
